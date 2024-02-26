@@ -155,92 +155,9 @@
     });
   </script>
   <style type="text/css">
-    @font-face {
-      font-family: 'tazwt';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_normal/55/TazWt05_Regular.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=3eeaa8fe6c2f5bd766baa75cefeb3dd0b4f7b46d08edbfc68185a3cf3fcc1feb') format('truetype'), url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/otf_normal/55/TazWt05_Regular.otf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=1c75ea27ce6715b4d340a547dc517951aab4e924f63fe1222cd12a9d014cdf8c') format('opentype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'tazwt';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_bold/55/TazWt07_Bold.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=f802c13e4a804e7200b4b8f53a55802a28dd8ee861702e6d119ec0865e1c84bd') format('truetype'), url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/otf_bold/55/TazWt07_Bold.otf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=29735aa4dd80f5737c11461d38dad5b51ed35d0ccadd8d74d26c0407fb1dae66') format('opentype');
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'tazwt';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_italic/55/TazWt05_Italic.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=f77d210ab78896888447ed7e2f584369331e5b4cb6dd19517b117a4630fe0185') format('truetype'), url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/otf_italic/55/TazWt05_Italic.otf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=bf9697a21c96e85e67463baa2ed340eecc824539e139d54d3f1c13f8d5c7136f') format('opentype');
-      font-weight: normal;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'tazwt';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_bold_italic/55/TazWt07_BoldItalic.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=4e1e1dd9407dd0b7ac231786a73b47d1e335437c1125e3f252a0800b6f2dc1cb') format('truetype'), url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/otf_bold_italic/55/TazWt07_BoldItalic.otf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=08d725c622b0f99968056469f135e09f86f77f5b904bbe0196f8ab34a961bfd5') format('opentype');
-      font-weight: bold;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'ptserif';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_normal/460/PtSerif.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=8e6e7ab3743287a446dc561ce8112d8b4179e6f0bc5768aacf2d4c980cd46fa9') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'ptserif';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_bold/460/PtSerif-Bold.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=95beb687e04198d44b8ad01c8acdeed24f4a3327059904ec0d2a524ecae1f5e4') format('truetype');
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'ptserif';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_italic/460/PtSerif-Oblique.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=21c236d6beb275e789b3e653ea8d84ddb4aabd9f57d9b72375d6d5f054ec1e5d') format('truetype');
-      font-weight: normal;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'ptserif';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_bold_italic/460/PtSerif-BoldOblique.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=d291ca989112cc4d587cfd5e8034ab763a2db153ae97d5da1ddcc65bbe5cb184') format('truetype');
-      font-weight: bold;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'blackdiamond';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_normal/1772/BlackDiamond.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=366034eb80e20a86859313ddeb304df0da7de282a62616c9be40ee2d6e43b800') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'blackdiamond';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_bold/1772/BlackDiamond.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=cb3a4233a1582507be37790045d69c864b6a05fa266989a6be89f4f625f8a4eb') format('truetype');
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'blackdiamond';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_italic/1772/BlackDiamond.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=cb5342f885b297695040130e11f3fd677cf0def0c4027508b89f5115026519db') format('truetype');
-      font-weight: normal;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'blackdiamond';
-      src: url('https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/font_family/ttf_bold_italic/1772/BlackDiamond.ttf?X-Amz-Expires=600&X-Amz-Date=20240223T162950Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=1f51e31cfa838c96be1a333f1e4869c698e97671fab999161583209171779644') format('truetype');
-      font-weight: bold;
-      font-style: italic;
-    }
 
     body {
-      font-family: tazwt, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
     .banner-image {
@@ -313,7 +230,7 @@
     }
 
     .theme-container #content #features a.region-wallet-text {
-      font-family: tazwt;
+      font-family: "Roboto Light";
       color: #FFFFFF;
     }
 
@@ -365,10 +282,10 @@
     }
 
     .trip-title, .web-view-trip-title {
-      font-family: blackdiamond;
+      font-family: Roboto;
       letter-spacing: 2px;
       color: #FFFFFF;
-      font-size: 65px !important;
+      font-size: 35px !important;
       text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
     }
 
@@ -947,13 +864,15 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="region region-itinerary-detail">
+
+
             <!-- Days part -->
             <div class="day">
               <div class="day-date separatorColor">
                 <div class="row">
                   <p class="date col-md-3 col-lg-3">
-                    <strong>DONNERSTAG</strong>
-                    , 16.05.24
+                    <strong>Dienstag</strong>
+                    , 08.10.24
                   </p>
                   <div class="col-md-9 col-lg-9">
                     <p class="web-view-day-title"></p>
@@ -976,7 +895,7 @@
                   <div>
                     <div class="itinerary-print col-xs-12 col-sm-12 col-md-9 col-lg-9">
                       <div class="row" style="padding-right:20px;">
-                        <p class='web-view-service-name web-view-event-title'>Zürich (ZRH) - Mauritius (MRU)</p>
+                        <p class='web-view-service-name web-view-event-title'>Genf (GVA) - Kilimanjaro (JRO)</p>
                       </div>
                     </div>
                   </div>
@@ -985,10 +904,10 @@
                   <div class="web-view-service-details">
                     <div class='row traveller-circle-row'></div>
                   </div>
-                  <div class="web-view-service-details">Emirates
+                  <div class="web-view-service-details">Turkish Airlines / Precision Airlines
                   </div>
                   <hr class="web-view-service-line-separator">
-                  <div class="web-view-service-details">1 Stopp
+                  <div class="web-view-service-details">2 Stopp
                   </div>
                   <hr class="web-view-service-line-separator">
                 </div>
@@ -996,7 +915,7 @@
                   <div class="row">
                     <div class="col-xs-8">
                       <p>
-                        Zürich (ZRH) - Dubai (DXB) (EK88)
+                        Genf (GVA) - Istanbul (IST) (TK1918)
                         <br>
                         <span class="subtitle">Economy
 
@@ -1007,20 +926,20 @@
                     </div>
                     <div class="col-xs-2 col-sm-3 flight-times">
                       <p>
-                        Ab. 15:25
-                        <br>An. 23:45
+                        Ab. 10:25
+                        <br>An. 14:40
 
                       </p>
                     </div>
                     <div class="col-xs-2 col-sm-1">
-                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/flight_company/file/4/EK.png?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b18891b582fc606b801cf5e3ee30672b6563d56bed51337e168b7a7e30d22fd5"/>
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://companieslogo.com/img/orig/THYAO.IS-f22d40e8.png"/>
                     </div>
                   </div>
                   <hr style="margin-top: 0px; margin-bottom: 10px;"/>
                   <div class="row">
                     <div class="col-xs-8">
                       <p>
-                        Dubai (DXB) - Mauritius (MRU) (EK701)
+                        Istanbul (IST) - Daressalam (DAR) (TK603)
                         <br>
                         <span class="subtitle">Economy
 
@@ -1031,13 +950,37 @@
                     </div>
                     <div class="col-xs-2 col-sm-3 flight-times">
                       <p>
-                        Ab. 02:35
-                        <br>An. 09:10
+                        Ab. 18:35
+                        <br>An. 02:35 (+1)
 
                       </p>
                     </div>
                     <div class="col-xs-2 col-sm-1">
-                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/flight_company/file/4/EK.png?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b18891b582fc606b801cf5e3ee30672b6563d56bed51337e168b7a7e30d22fd5"/>
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://companieslogo.com/img/orig/THYAO.IS-f22d40e8.png"/>
+                    </div>
+                  </div>
+                  <hr style="margin-top: 0px; margin-bottom: 10px;"/>
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <p>
+                        Daressalam (DAR) - Kilimanjaro (JRO) (PW717)
+                        <br>
+                        <span class="subtitle">Economy
+
+
+
+            </span>
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-3 flight-times">
+                      <p>
+                        Ab. 05:20 (+1)
+                        <br>An. 06:20 (+1)
+
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-1">
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://ajirayako.co.tz/wp-content/uploads/2022/12/precision-air-squarelogo-1634904214412.png"/>
                     </div>
                   </div>
                   <div class="row" style="padding-top: 20px">
@@ -1075,8 +1018,8 @@
               <div class="day-date separatorColor">
                 <div class="row">
                   <p class="date col-md-3 col-lg-3">
-                    <strong>FREITAG</strong>
-                    , 17.05.24
+                    <strong>MITTWOCH</strong>
+                    , 09.10.24
                   </p>
                   <div class="col-md-9 col-lg-9">
                     <p class="web-view-day-title"></p>
@@ -1097,7 +1040,7 @@
                   <div class="">
                     <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
                       <div class="row" style="padding-right:20px;">
-                        <p class='web-view-event-title'>Empfang durch lokale Agentur Mason's Travel</p>
+                        <p class='web-view-event-title'>Empfang durch lokale Safari Agentur</p>
                       </div>
                     </div>
                   </div>
@@ -1114,7 +1057,7 @@
                   <div class="">
                     <div class="event-description web-view-event-description">
                       <p>
-                      <p>Nach Erledigung der Einreiseformalitäten und der Gepäckentgegennahme wenden Sie sich an unsere lokale Agentur Mason's Travel für weitere Informationen zu Ihrem Aufenthalt/Ihrer Weiterreise.</p>
+                      <p>Nach Erledigung der Einreiseformalitäten und der Gepäckentgegennahme wenden Sie sich an unsere lokale Agentur für weitere Informationen zu Ihrem Aufenthalt.</p>
                       </div><div style="padding-right:20px;"></div>
                   </div></div><div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -1133,7 +1076,7 @@
                   <div class="">
                     <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
                       <div class="row" style="padding-right:20px;">
-                        <p class='web-view-event-title'>Privattransfer Superior Car vom Flughafen zum Hotel</p>
+                        <p class='web-view-event-title'>Transfer vom Flughafen zum Hotel</p>
                       </div>
                     </div>
                   </div>
@@ -1142,18 +1085,6 @@
                   <div class="web-view-service-details">
                     <div class="event-travellers-circle  without-subitile">
                       <div class='row traveller-circle-row'></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3">
-                  <div class="hidden-print pictures-slider">
-                    <div class="slick-carousel ">
-                      <div class="booking_viewer-image-container pictureColors ">
-                        <a href="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/765622/Mauritius_Bild_Strasse.jpg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e9c28edad1c14b296343dd1db04e3cbcf41890b722137186cbb25c955a247f6a" style="display: none" data-footer="" data-toggle="lightbox" data-gallery="all-gallery" class="offer-img"></a>
-                        <a href="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/765622/Mauritius_Bild_Strasse.jpg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e9c28edad1c14b296343dd1db04e3cbcf41890b722137186cbb25c955a247f6a" data-footer=" " data-toggle="lightbox" data-gallery="gallery-25647856" class="offer-img">
-                          <div style="height: 400px; width: 100%; background: url(https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/765622/Mauritius_Bild_Strasse.jpg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e9c28edad1c14b296343dd1db04e3cbcf41890b722137186cbb25c955a247f6a); background-size: cover; background-position: center center;">&nbsp;</div>
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1182,7 +1113,7 @@
                   <div class="">
                     <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
                       <div class="row" style="padding-right:20px;">
-                        <p class='web-view-service-name web-view-event-title'>Victoria Beachcomber Resort & Spa for tw</p>
+                        <p class='web-view-service-name web-view-event-title'>Wird organisiert durch die Safari Tour Agentur</p>
                       </div>
                     </div>
                   </div>
@@ -1191,122 +1122,192 @@
                   <div class="web-view-service-details col-xs-offset-2 col-sm-offset-1 col-md-offset-0" style="padding-left: 5px">
                     <div class='row traveller-circle-row'></div>
                   </div>
-                  <div class="web-view-service-details">17.05.24 - 25.05.24
+                  <div class="web-view-service-details">09.10.24 - 10.10.24
                   </div>
                   <hr class='web-view-service-line-separator'>
-                  <div class="web-view-service-details">8 Nächte
+                  <div class="web-view-service-details">1 Nacht
                   </div>
                   <hr class='web-view-service-line-separator'>
-                  <div class="web-view-service-details">Halbpension
-                  </div>
-                  <hr class="web-view-service-line-separator">
-                  <div class="web-view-service-details services-topics">
-                    <a data-toggle="modal" data-target="#services_topics_5582793" class="event-link event-link-modal" href="#">
-                      Mehr erfahren <i class="fas fa-plus-circle"></i>
-                    </a>
-                  </div>
-                  <hr class="web-view-service-line-separator rating-block">
-                  <div class="web-view-service-details services-topics">
-                    <b>
-                      <p>Manta meint:</p>
-                    </b>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Kategorie</span>
-                    <p class="event-link rating-value">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Sport</span>
-                    <p class="event-link rating-value">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Strand</span>
-                    <p class="event-link rating-value">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Kulinarisches</span>
-                    <p class="event-link rating-value">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Kinderfreundlich</span>
-                    <p class="event-link rating-value">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Wellbeing</span>
-                    <p class="event-link rating-value">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="web-view-service-details services-topics">
-                    <span class="rating-name">Schnorcheln</span>
-                    <p class="event-link rating-value">
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
+                  <div class="web-view-service-details">Vollpension
                   </div>
                   <hr class="web-view-service-line-separator">
                   <div class="hidden-xs hidden-sm alternatives"></div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                  <p>Honeymooner Swim-up Doppel
+                  <p>Hotel des Touranbieters
+                  </p>
+                  <div class="web-view-lodging-description">
+                    <p> Nicht wählbar </p>
+                    <div class="event-description web-view-event-description"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hotel-service-fields"></div>
+              </div>
+              <hr class="hr-style"/>
+            </div>
+
+
+
+
+
+
+
+            <div class="day">
+              <div class="day-date separatorColor">
+                <div class="row">
+                  <p class="date col-md-3 col-lg-3">
+                    <strong>MITTWOCH</strong>
+                    , 16.10.24
+                  </p>
+                  <div class="col-md-9 col-lg-9">
+                    <p class="web-view-day-title"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+              </div>
+              <!-- Events part -->
+
+              <div class="row  flight-view">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fas fa-plane-departure"></i>
+                  </div>
+                  <p class="web-view-service-type  region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Flüge
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11 col-md-9 col-lg-9">
+                  <div>
+                    <div class="itinerary-print col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-service-name web-view-event-title'>Kilimanjaro (JRO) - Zanzibar (ZNZ) (PW718)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class='row traveller-circle-row'></div>
+                  </div>
+                  <div class="web-view-service-details">Precision Airlines
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                  <div class="web-view-service-details">Nontopp
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 flight-summary">
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <p>
+                        Kilimanjaro (JRO) - Zanzibar (ZNZ) (PW718)
+                        <br>
+                        <span class="subtitle">Economy
+
+
+
+            </span>
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-3 flight-times">
+                      <p>
+                        Ab. 09:50
+                        <br>An. 11:10
+
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-1">
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://ajirayako.co.tz/wp-content/uploads/2022/12/precision-air-squarelogo-1634904214412.png"/>
+                    </div>
+                  </div>
+                  <hr style="margin-top: 0px; margin-bottom: 10px;"/>
+                  <div class="row">
+                    <div class="col-xs-12"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+
+              <div class="row day-event-contenaire">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </div>
+                  <p class="web-view-event-indication region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Nach Ankunft
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11  col-md-9 col-lg-9">
+                  <div class="">
+                    <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-event-title'>Transfer vom Flughafen zum Hotel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class="event-travellers-circle  without-subitile">
+                      <div class='row traveller-circle-row'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3">
+                  <div class="">
+                    <div class="event-description web-view-event-description">
+                      <p>&nbsp;</p>
+                    </div>
+                    <div style="padding-right:20px;"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+              <div class="row day-event-contenaire lodging-view">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fa fa-bed"></i>
+                  </div>
+                  <p class="web-view-service-type region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Unterkunft
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11 col-md-9 col-lg-9">
+                  <div class="">
+                    <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-service-name web-view-event-title'>Dhow Inn Boutique Hotel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 hotel-service-fields">
+                  <div class="web-view-service-details col-xs-offset-2 col-sm-offset-1 col-md-offset-0" style="padding-left: 5px">
+                    <div class='row traveller-circle-row'></div>
+                  </div>
+                  <div class="web-view-service-details">16.10.24 - 20.10.24</div>
+                  <hr class='web-view-service-line-separator'>
+                  <div class="web-view-service-details">4 Nächte</div>
+                  <hr class='web-view-service-line-separator'>
+                  <div class="web-view-service-details">Halbpension</div>
+                  <hr class="web-view-service-line-separator">
+                  <div class="hidden-xs hidden-sm alternatives"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                  <p>Deluxe-Doppelzimmer
                   </p>
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 web-view-lodging-pictures" style="margin-bottom: 10px; padding:0;">
                     <div class="hidden-print pictures-slider">
                       <div class="slick-carousel ">
                         <div class="booking_viewer-image-container pictureColors ">
-                          <a href="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/1025715/496_83da89a8-fe8e-4569-927d-583c0383ca00.jpeg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=31834c3c9799bf40bda2cd4d63593d0583fbd716b32b06fb81ec9472dbc92b3f" style="display: none" data-footer="Adults-only Pool Victoria for Two" data-toggle="lightbox" data-gallery="all-gallery" class="offer-img"></a>
-                          <a href="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/1025715/496_83da89a8-fe8e-4569-927d-583c0383ca00.jpeg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=31834c3c9799bf40bda2cd4d63593d0583fbd716b32b06fb81ec9472dbc92b3f" data-footer="Adults-only Pool Victoria for Two " data-toggle="lightbox" data-gallery="gallery-25647845" class="offer-img">
-                            <div style="height: 400px; width: 100%; background: url(https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/1025715/496_83da89a8-fe8e-4569-927d-583c0383ca00.jpeg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=31834c3c9799bf40bda2cd4d63593d0583fbd716b32b06fb81ec9472dbc92b3f); background-size: cover; background-position: center center;">&nbsp;</div>
-                          </a>
-                        </div>
-                        <div class="booking_viewer-image-container pictureColors ">
-                          <a href="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/242708/496_f4d76a47-85c6-43a1-87a9-2e30304d1be8.jpeg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=25c283398d6602eda5c67e383622b70315817fa302149fc26476ce681c911f09" style="display: none" data-footer="Beach Bar" data-toggle="lightbox" data-gallery="all-gallery" class="offer-img"></a>
-                          <a href="https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/242708/496_f4d76a47-85c6-43a1-87a9-2e30304d1be8.jpeg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=25c283398d6602eda5c67e383622b70315817fa302149fc26476ce681c911f09" data-footer="Beach Bar " data-toggle="lightbox" data-gallery="gallery-25647845" class="offer-img">
-                            <div style="height: 400px; width: 100%; background: url(https://destinationbook-files.s3-eu-central-1.amazonaws.com/uploads/picture/file/242708/496_f4d76a47-85c6-43a1-87a9-2e30304d1be8.jpeg?X-Amz-Expires=432000&amp;X-Amz-Date=20240223T162949Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAW646B24ZZCGDUBWA/20240223/eu-central-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=25c283398d6602eda5c67e383622b70315817fa302149fc26476ce681c911f09); background-size: cover; background-position: center center;">&nbsp;</div>
+                          <a href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/2b/d3/ae/dhow-inn-boutique-hotel.jpg?w=900&h=-1&s=1" style="display: none" data-footer="Adults-only Pool Victoria for Two" data-toggle="lightbox" data-gallery="all-gallery" class="offer-img"></a>
+                          <a href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/2b/d3/ae/dhow-inn-boutique-hotel.jpg?w=900&h=-1&s=1" data-footer="Adults-only Pool Victoria for Two " data-toggle="lightbox" data-gallery="gallery-25647845" class="offer-img">
+                            <div style="height: 400px; width: 100%; background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/2b/d3/ae/dhow-inn-boutique-hotel.jpg?w=900&h=-1&s=1); background-size: cover; background-position: center center;">&nbsp;</div>
                           </a>
                         </div>
                       </div>
@@ -1314,87 +1315,453 @@
                     </div>
                   </div>
                   <div class="web-view-lodging-description">
-                    <p>Das «Victoria Beachcomber Resort &amp;Spa» ist ein grosszügig konzipiertes Mittelklassehotel mit einem umfassenden Sportangebot für abwechslungsreiche Aktivferien. Der Hotelteil «Victoria Beachcomber for Two» bereichert die Anlage für Erwachsene. Denn dieser Teil bleibt Gästen ab 18 Jahren vorbehalten und begeistert unter anderem mit einer grossen Schwimmlagune und eigenem Strandbereich.</p>
+                    <p>Ein schönes romantisches Hotel in Paje zu finden, muss nicht schwierig sein. Willkommen im Dhow Inn, einer guten Wahl für Reisende mit Ihren Präferenzen. Das Dhow Inn bietet einen Concierge und einen Zimmerservice. Darüber hinaus haben Gäste Zutritt zum Pool und zum Frühstück inklusive, sodass das Hotel bei Reisenden, die Paje besuchen, besonders beliebt ist. Für Gäste, die mit dem Auto anreisen, steht ein kostenloser Parkplatz zur Verfügung
+                      Lassen Sie sich bei Ihrem Aufenthalt auf keinen Fall das Restaurant Mr Kahawa entgehen, eines der Restaurants in Paje mit Falafel auf der Speisekarte, das sich zudem in der Nähe des Dhow Inn befindet. Das Dhow Inn freut sich darauf, Sie bei Ihrem Besuch in Paje begrüßen zu dürfen.</p>
                     <div class="event-description web-view-event-description"></div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hotel-service-fields"></div>
-                <div class="modal fade services-topics" id="services_topics_5582793">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header backgroundColorSecondSet">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h3 class="modal-title" id="exampleModalLabel">Victoria Beachcomber Resort &amp;Spa for tw</h3>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <i class="fas fa-compass"></i>
-                          </div>
-                          <div class="col-xs-10">
-                            <h2>Umgebung</h2>
-                            <p>Die Anlage liegt zwischen der Hauptstadt Port Louis und Grand Baie und ist 60 km vom Flughafen entfernt.</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <i class="fas fa-bed"></i>
-                          </div>
-                          <div class="col-xs-10">
-                            <h2>Unterkunft</h2>
-                            <p>
-                              Die 254 Zimmer, Suiten und Familien-Apartements sind aufgeteilt in Superior First Floor Zimmer (60 m²), welche mit einem Doppelbett, Bad mit separater Dusche/WC, Haartrockner, Klimaanlage, TV, kostenlosem Wi-Fi, Minibar, Tee-/Kaffeekocher, Safe und Balkon ausgestattet sind. Sie liegen im 1. Stock und auf der Meerseite. Die Superior Sea View Zimmer bieten zusätzlich Meersicht. Die Deluxe Zimmer (60 m²) verfügen über die gleiche Einrichtung mit zusätzlichem Deckenventilator und liegen in der obersten Etage. Die Deluxe Ground Floor Zimmer (60 m²) liegen im Erdgeschoss und haben eine grosszügige, private Terrasse. Weiter gibt es 2-bedroom Family Apartments (120 m²) mit 2 Schlafzimmern und 2 Badezimmern (max. 3 Kinder).<br/>Die 17 Swim-up Zimmer mit direktem Poolzugang von der Terrasse und die 23 Oceanview Zimmer im 1. Stock oder 2. Stock liegen im Hotelteil «Victoria Beachcomber for Two».
-                            </p>
-                            <p>
-                              <strong>ANZAHL ZIMMER</strong>
-                              <br>254
-                            </p>
-                            <p>
-                              <strong>INFRASTRUKTUR</strong>
-                              <br>Insgesamt 5 Restaurants, 7 Bars, kostenloses Wi-Fi, Boutiquen, Coiffeur, Lounge, 1 Swimmingpool und ein Spa Beachcomber mit 5 Behandlungsräumen, separater Lagunenpool für Gäste des «Victoria Beachcomber for Two».
-                            </p>
-                            <p>
-                              <strong>RESTAURANTS UND BARS</strong>
-                              <br>Hauptrestaurant «Le Superbe» bietet internationale Buffets mit Show-Cooking und schöne Aussicht auf die Lagune und den Garten, italienisches Feinschmecker-Restaurant «La Casa», Fischrestaurant «L'Horizon». Den Gästen ab 18 Jahren vorbehalten sind das Gourmet-Restaurant «La Terrasse» und das im Hotelteil «Victoria Beachcomber for Two» gelegene Grillrestaurant.
-                            </p>
-                            <p>
-                              <strong>SPORT</strong>
-                              <br>
-                              Ohne Gebühr: Sauna, Dampfbad, Fitnesscenter, Aquagymnastik, 3 Tennisplätze (mit Flutlicht), Tischtennis, Volleyball, Boccia, Tretboot, Kajak, Windsurfen, Segeln, Wasserski, Stand-up-Paddeln, Glasbodenboot- und Schnorchelausflüge. <br/>Gegen Gebühr: Tauchen, Golf (ermässigte Green Fee im 15 Minuten entfernten Golfplatz «Mont Choisy»), Hochseefischen, Fahrradverleih, Tennisbälle, Billard, Spinning, Pilates, Powerplate.
-                            </p>
-                            <p>
-                              <strong>KINDER</strong>
-                              <br>Kinderbecken, Kids Club für 3- bis 11-Jährige, Teens Club für 12- bis 17-Jährige (während der Schulferien), Babysitter auf Anfrage.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <i class="fas fa-spa"></i>
-                          </div>
-                          <div class="col-xs-10">
-                            <h2>Wellness</h2>
-                            <p>Raum für Entspannung und Erholung von Körper und Seele bietet dieser neue Wellness-Bereich. Geniessen Sie eine wohltuende Partnermassage oder eine Körperbehandlung in elegantem und angenehmen Ambiente im 250 m² grossen Spa. Neben den fünf Behandlungszimmern stehen eine Sauna und ein Hamam zur Verfügung.</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <i class="fas fa-leaf"></i>
-                          </div>
-                          <div class="col-xs-10">
-                            <h2>Nachhaltigkeit</h2>
-                            <p>Nachhaltiges Management spielt bei der Hotelgruppe Beachcomber eine wichtige Rolle. Mit Unterstützung der Regierung von Mauritius haben Umweltexperten der Beachcomber-Gruppe ein Programm zur umweltverträglichen Nutzung von Energie und somit zum Schutz der Insel erarbeitet. Um Energie zu sparen, wurden die Hotels mit Klimaanlagen aufgerüstet, welche aus Wasserdampf Kaltwasser gewinnen können. Seit 2008 setzt die Gruppe auch auf Solarenergie, so decken die neuesten Projekte in den Hotels «Trou aux Biches» und «Victoria Beachcomber» bereits einen Teil des Strombedarfs und helfen den Verbrauch fossiler Energien zu reduzieren. Um den Wasserverbrauch zu kontrollieren, wurde in ein Abwasseraufbereitungssystem investiert, welches zur Bewässerung des Gartens genutzt wird. Der Wasserverbrauch wird täglich kontrolliert und gezielt eingesetzt, so konnte bereits eine Einsparung von 15% pro Gast festgehalten werden. Mit der Gründung der regierungsunabhängigen Organisation FED, die «Fondation Espoir et Dévelopement», übersetzt «Gesellschaft für Hoffnung und Entwicklungshilfe», nimmt die Hotelgruppe ihr soziales Bewusstsein wahr. Es werden Projekte für sozial schwächere Mitmenschen unterstützt, welche Hilfestellungen zur Selbsthilfe geben.</p>
-                          </div>
-                        </div>
+              </div>
+              <hr class="hr-style"/>
+            </div>
+
+
+
+            <div class="day">
+              <div class="day-date separatorColor">
+                <div class="row">
+                  <p class="date col-md-3 col-lg-3">
+                    <strong>SONNTAG</strong>
+                    , 20.10.24
+                  </p>
+                  <div class="col-md-9 col-lg-9">
+                    <p class="web-view-day-title"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+              </div>
+              <!-- Events part -->
+
+              <div class="row  flight-view">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fas fa-plane-departure"></i>
+                  </div>
+                  <p class="web-view-service-type  region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Flüge
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11 col-md-9 col-lg-9">
+                  <div>
+                    <div class="itinerary-print col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-service-name web-view-event-title'>Zanzibar (ZNZ) - Dar Es Salaam (DAR)</p>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class='row traveller-circle-row'></div>
+                  </div>
+                  <div class="web-view-service-details">Precision Airlines
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                  <div class="web-view-service-details">Nontopp
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 flight-summary">
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <p>
+                        Zanzibar (ZNZ) - Dar Es Salaam (DAR) (PW718)
+                        <br>
+                        <span class="subtitle">Economy
+
+
+
+            </span>
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-3 flight-times">
+                      <p>
+                        Ab. 11:30
+                        <br>An. 12:00
+
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-1">
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://ajirayako.co.tz/wp-content/uploads/2022/12/precision-air-squarelogo-1634904214412.png"/>
+                    </div>
+                  </div>
+                  <hr style="margin-top: 0px; margin-bottom: 10px;"/>
+                  <div class="row">
+                    <div class="col-xs-12"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+
+              <div class="row day-event-contenaire">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </div>
+                  <p class="web-view-event-indication region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Nach Ankunft
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11  col-md-9 col-lg-9">
+                  <div class="">
+                    <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-event-title'>Gepäck deponieren und die Stadt Dar Es Salam besichtigen</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class="event-travellers-circle  without-subitile">
+                      <div class='row traveller-circle-row'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3">
+                  <div class="">
+                    <div class="event-description web-view-event-description">
+                      <p>&nbsp;</p>
+                    </div>
+                    <div style="padding-right:20px;"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="day">
+              <div class="day-date separatorColor">
+                <div class="row">
+                  <p class="date col-md-3 col-lg-3">
+                    <strong>MONTAG</strong>
+                    , 21.10.24
+                  </p>
+                  <div class="col-md-9 col-lg-9">
+                    <p class="web-view-day-title"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+              </div>
+              <!-- Events part -->
+
+              <div class="row  flight-view">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fas fa-plane-departure"></i>
+                  </div>
+                  <p class="web-view-service-type  region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Flüge
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11 col-md-9 col-lg-9">
+                  <div>
+                    <div class="itinerary-print col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-service-name web-view-event-title'>Daressalam (DAR) - Istanbul (IST)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class='row traveller-circle-row'></div>
+                  </div>
+                  <div class="web-view-service-details">Turkish Airlines
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                  <div class="web-view-service-details">Nontopp
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 flight-summary">
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <p>
+                        Daressalam (DAR) - Istanbul (IST) (TK526)
+                        <br>
+                        <span class="subtitle">Economy
+
+
+
+            </span>
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-3 flight-times">
+                      <p>
+                        Ab. 06:40
+                        <br>An. 14:35
+
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-1">
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://companieslogo.com/img/orig/THYAO.IS-f22d40e8.png"/>
+                    </div>
+                  </div>
+                  <hr style="margin-top: 0px; margin-bottom: 10px;"/>
+                  <div class="row">
+                    <div class="col-xs-12"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+
+              <div class="row day-event-contenaire">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </div>
+                  <p class="web-view-event-indication region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Nach Ankunft
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11  col-md-9 col-lg-9">
+                  <div class="">
+                    <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-event-title'>Transfer vom Flughafen zum Hotel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class="event-travellers-circle  without-subitile">
+                      <div class='row traveller-circle-row'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3">
+                  <div class="">
+                    <div class="event-description web-view-event-description">
+                      <p>&nbsp;</p>
+                    </div>
+                    <div style="padding-right:20px;"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+              <div class="row day-event-contenaire lodging-view">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fa fa-bed"></i>
+                  </div>
+                  <p class="web-view-service-type region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Unterkunft
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11 col-md-9 col-lg-9">
+                  <div class="">
+                    <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-service-name web-view-event-title'>SHERATON İSTANBUL ATAKÖY HOTEL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 hotel-service-fields">
+                  <div class="web-view-service-details col-xs-offset-2 col-sm-offset-1 col-md-offset-0" style="padding-left: 5px">
+                    <div class='row traveller-circle-row'></div>
+                  </div>
+                  <div class="web-view-service-details">21.10.24 - 22.10.24</div>
+                  <hr class='web-view-service-line-separator'>
+                  <div class="web-view-service-details">1 Nacht</div>
+                  <hr class='web-view-service-line-separator'>
+                  <div class="web-view-service-details">Frühstück</div>
+                  <hr class="web-view-service-line-separator">
+                  <div class="hidden-xs hidden-sm alternatives"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                  <p>Deluxe-Doppelzimmer
+                  </p>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 web-view-lodging-pictures" style="margin-bottom: 10px; padding:0;">
+                    <div class="hidden-print pictures-slider">
+                      <div class="slick-carousel ">
+                        <div class="booking_viewer-image-container pictureColors ">
+                          <a href="https://cf.bstatic.com/xdata/images/hotel/max1024x768/465560503.jpg?k=cbd773a979786a0dae442d017f9bdbb744631a2edc694c32139c8f3a29a84250&o=&hp=1" style="display: none" data-footer="Adults-only Pool Victoria for Two" data-toggle="lightbox" data-gallery="all-gallery" class="offer-img"></a>
+                          <a href="https://cf.bstatic.com/xdata/images/hotel/max1024x768/465560503.jpg?k=cbd773a979786a0dae442d017f9bdbb744631a2edc694c32139c8f3a29a84250&o=&hp=1" data-footer="Adults-only Pool Victoria for Two " data-toggle="lightbox" data-gallery="gallery-25647845" class="offer-img">
+                            <div style="height: 400px; width: 100%; background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/465560503.jpg?k=cbd773a979786a0dae442d017f9bdbb744631a2edc694c32139c8f3a29a84250&o=&hp=1); background-size: cover; background-position: center center;">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                      <i class="fas fa-camera"></i>
+                    </div>
+                  </div>
+                  <div class="web-view-lodging-description">
+                    <p>Suchen Sie nach einer Unterkunft in Istanbul? Dann sind Sie im Sheraton Istanbul Atakoy Hotel genau richtig, ein familienfreundliches Hotel, das Ihnen Istanbul zu Füßen legen wird.
+
+                      Zimmer im Sheraton Istanbul Atakoy Hotel sind mit Flachbildfernseher, Klimaanlage und Minibar ausgestattet und bieten damit außergewöhnlichen Komfort. Darüber hinaus können Gäste mit dem kostenlosen Internet online gehen.
+                    </p>
+                    <p>
+                      Der Concierge und der Zimmerservice sind nur einige Annehmlichkeiten, die das Hotel bietet. Durch den Pool und das Restaurant des Hotels wird Ihr Aufenthalt noch angenehmer. Wenn Sie bei Ihrem Besuch des Sheraton Istanbul Atakoy Hotels mit dem Auto anreisen, steht ein kostenloser Parkplatz zur Verfügung. Während ihres Aufenthalts können Gäste des Sheraton Istanbul Atakoy Hotels Attraktionen wie Hamidiye Cami (2, 7 km) und Istanbul Üniversitesi Rektörlüğü (3, 0 km) besuchen, einige der besten Sehenswürdigkeiten von Istanbul.
+                    </p>
+                    <p>
+                      Lassen Sie sich bei einem Besuch in Istanbul die regionale Garnelen in Restaurants wie Eleos, Yüksel Balik Seafood Restaurant oder Halas Balik Bakirkoy nicht entgehen.
+                    </p><p>
+                      Während Ihres Aufenthalts sollten Sie aber auch beliebte historische Stätten besuchen, wie z. B. Hagia Sophia (Ayasofya), Basilica Cistern und Galata Tower.
+
+                      Genießen Sie Ihren Aufenthalt im Sheraton Istanbul Atakoy Hotel und lernen Sie gleichzeitig Istanbul von seiner besten Seite kennen.
+                    </p>
+
+                    <div class="event-description web-view-event-description"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hotel-service-fields"></div>
               </div>
               <hr class="hr-style"/>
             </div>
+
+
+
+
+
+
+
+            <div class="day">
+              <div class="day-date separatorColor">
+                <div class="row">
+                  <p class="date col-md-3 col-lg-3">
+                    <strong>DIENSTAG</strong>
+                    , 21.10.24
+                  </p>
+                  <div class="col-md-9 col-lg-9">
+                    <p class="web-view-day-title"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+              </div>
+              <!-- Events part -->
+
+              <div class="row day-event-contenaire">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </div>
+                  <p class="web-view-event-indication region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Nach Ankunft
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11  col-md-9 col-lg-9">
+                  <div class="">
+                    <div class="itinerary-print col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-event-title'>Transfer vom Hotel zum Flughafen</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class="event-travellers-circle  without-subitile">
+                      <div class='row traveller-circle-row'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3">
+                  <div class="">
+                    <div class="event-description web-view-event-description">
+                      <p>&nbsp;</p>
+                    </div>
+                    <div style="padding-right:20px;"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+
+
+              <div class="row  flight-view">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 web-view-header-icon">
+                  <div class="web-view-service-icon-color circle-border-shape">
+                    <i class="fas fa-plane-departure"></i>
+                  </div>
+                  <p class="web-view-service-type  region-hours col-xs-offset-2 col-sm-offset-1 service-icon">Flüge
+                  </p>
+                </div>
+                <div class="col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 event-title col-xs-10 col-sm-11 col-md-9 col-lg-9">
+                  <div>
+                    <div class="itinerary-print col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                      <div class="row" style="padding-right:20px;">
+                        <p class='web-view-service-name web-view-event-title'>Istanbul (IST) - Genf (GVA)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 hotel-service-fields">
+                  <div class="web-view-service-details">
+                    <div class='row traveller-circle-row'></div>
+                  </div>
+                  <div class="web-view-service-details">Turkish Airlines
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                  <div class="web-view-service-details">Nontopp
+                  </div>
+                  <hr class="web-view-service-line-separator">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 flight-summary">
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <p>
+                        Istanbul (IST) - Genf (GVA) (TK1921)
+                        <br>
+                        <span class="subtitle">Economy
+
+
+
+            </span>
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-3 flight-times">
+                      <p>
+                        Ab. 11:40
+                        <br>An. 13:55
+
+                      </p>
+                    </div>
+                    <div class="col-xs-2 col-sm-1">
+                      <img class="img-responsive pull-right" style="max-width: 50px; padding-top: 3px;" src="https://companieslogo.com/img/orig/THYAO.IS-f22d40e8.png"/>
+                    </div>
+                  </div>
+                  <hr style="margin-top: 0px; margin-bottom: 10px;"/>
+                  <div class="row">
+                    <div class="col-xs-12"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <hr class="hr-style"/>
+                </div>
+              </div>
+            </div>
+
 
 
 
@@ -1423,41 +1790,6 @@
                 <p>
                   <strong>Preise Stand 29.01.2024</strong>
                 </p>
-                <p>
-                  <strong>Preis- und Programmänderungen</strong>
-                  <strong>
-                    <br>
-                  </strong>
-                  Preis- und Programmänderungen sowie die Verfügbarkeit der offerierten Leistungen bleiben bis zur definitiven Buchung vorbehalten.
-                </p>
-                <p>
-                  <strong>Bearbeitungsgebühr Manta Reisen</strong>
-                  <br>
-                  Unser Servicehonorar beinhaltet:<br>
-                  • Persönliche Ansprechperson rund um Ihre Reise<br>
-                  • Expertenwissen/ Insiderwissen<br>
-                  • Unterstützung bei unvorhergesehenen Ereignissen<br>
-                  • 24h Notfallservice<br>
-                  • Gesetzlicher Garantiefonds der Schweizer Reisebranche<br>• Kundenwünsche (Sonderwünsche am Ferienort)
-                </p>
-                <p>
-                  <strong>Reservation</strong>
-                  <br>Bitte beachten Sie, dass im Moment noch nichts reserviert ist und der Preis sowie die Verfügbarkeit sich jederzeit ändern kann.
-                </p>
-                <p>
-                  <strong>Zimmer auf Anfrage</strong>
-                  <br>Die Verfügbarkeit des offerierten Zimmers ist nicht garantiert. Gerne fragen wir Ihnen diese bei definitiver Buchung direkt beim Hotel an. Die Bearbeitungszeit beträgt in der Regel 2-3 Werktage. Eine Buchungsanfrage ist stets verbindlich.
-                </p>
-                <p>
-                  <strong>
-                    Hochzeitsreise<br>
-                  </strong>
-                  Verbringen Sie mit uns die Flitterwochen und buchen ein Pauschal-Arrangement inklusive Langstreckenflug ab der Schweiz (Abflug spätestens 180 Tage nach der Ziviltrauung), dann schenken wir Ihnen CHF 200.- (pro Ehepaar) an Ihre Reise. Um die Reduktion abziehen zu können, benötigen wir eine Kopie Ihrer Trauungsurkunde oder des Aufgebots zur Trauung. Für die Zusendung danken wir Ihnen.
-                </p>
-                <p>
-                  <strong>Kundenwünsche</strong>
-                  <br>Kundenwünsche sind unverbindlich und können grundsätzlich nicht bestätigt werden.
-                </p>
               </div>
             </div>
           </div>
@@ -1478,81 +1810,39 @@
                 <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 text-right">Betrag(CHF)</div>
               </div>
               <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Emirates Flug inklusive Flughafentaxen</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">2</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1151.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">2 x 1151.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">2302.00</div>
+                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Turkish Airline Flüge</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">4</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">680.85</div>
+                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">4 x 680.85</div>
+                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">2'723.40</div>
               </div>
               <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Alle Transfers</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">384.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 384.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">384.00</div>
+                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Flug DAR - JRO</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">4</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">70.25</div>
+                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">4 x 70.25</div>
+                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">280.99</div>
               </div>
               <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Victoria for two</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">2616.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 2616.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">2616.00</div>
+                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Flug JRO - ZNZ</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">4</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">145.75</div>
+                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">4 x 145.75</div>
+                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">582.99</div>
               </div>
               <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Chalets Chamarel</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1120.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 1120.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">1120.00</div>
+                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Flug ZNZ - DAR</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">4</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">23.00</div>
+                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">4 x 23.00</div>
+                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">91.99</div>
               </div>
               <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Lakaz Chamarel</div>
+                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Hotel Dhow Inn Boutique Hotel</div>
                 <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1287.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 1287.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">1287.00</div>
-              </div>
-              <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Shanti Maurice</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">6147.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 6147.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">6147.00</div>
-              </div>
-              <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Maradiva Villas</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">7902.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 7902.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">7902.00</div>
-              </div>
-              <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Bearbeitungsgebühr Manta Reisen</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">100.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 100.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">100.00</div>
-              </div>
-              <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Klimaspende</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">10.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 10.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">10.00</div>
-              </div>
-              <div class="row table-price" style="border-bottom:1px solid #cecece;">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Messerabatt</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">-200.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x -200.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">-200.00</div>
-              </div>
-              <div class="row table-price">
-                <div class="col-xs-9 col-sm-19 col-md-6 col-lg-6 text-left">Hochzeitsrabatt</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1</div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">-200.00</div>
-                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x -200.00</div>
-                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">-200.00</div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">1'673.16</div>
+                <div class="col-xs-4 col-sm-4 hidden-md hidden-lg" style="text-align: left !important;">1 x 1'673.16</div>
+                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2 text-right price-total">1'673.16</div>
               </div>
             </div>
           </div>
@@ -1561,42 +1851,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="row table-price">
                 <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 text-left">Total</div>
-                <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 text-right">21468.00</div>
+                <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 text-right">XXXX.XX</div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="include-print col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="region region-not-include">
-                <h3>Nicht inbegriffen</h3>
-                <p>
-                  Die Sitzplatzreservation ist bei den meisten Fluggesellschaften kostenpflichtig.<strong>&nbsp;</strong>
-                  Starten Sie entspannt und sichern Sie sich Ihre Wunschplätze. Gerne tätigen wir die Reservation gegen eine Gebühr von CHF 10.- pro Person (max. CHF 30.—pro Auftrag) für Sie. Bitte kontaktieren Sie uns dafür<strong>.</strong>
-                </p>
-                <p>
-                  <strong>Mögliche Zusatzleistungen Emirates</strong>
-                  <br>Starten Sie entspannt in die Ferien und reservieren Sie über die Homepage von Emirates Ihren Wunschsitzplatz. Für Ihre Tarifklasse (V, X, T, L, Q) erhebt die Fluggesellschaft eine Gebühr von ca CHF 50.- pro Person/Weg. Diese ist ausschliesslich mit der Kreditkarte bezahlbar.
-                </p>
-                <p>Bitte beachten Sie, dass Sitzplatzreservationen im Falle einer Annullation nicht rückerstattet werden.</p>
-                <p>Gegen einen Aufpreis von CHF xxx haben Sie die Möglichkeit in der Business Class zu fliegen und vom gratis Limousinen Transfer zu profitieren, welcher Sie zu Hause abholt und wieder nach Hause fährt (Reichweite 80km).</p>
-                <p>
-                  <strong>Reiseversicherung</strong>
-                  <br>
-                  Wir empfehlen Ihnen den Abschluss einer Reiseversicherung, sofern Sie privat nicht abgesichert sind.<br>
-                  Annullation &amp;Assistance Kollektivversicherung: CHF ab CHF 82.- pro Person (je nach Reisebetrag)<br>
-                  Tauchversicherung: CHF 75.- pro Person (kann nicht einzeln sondern nur in Kombination mit der Annullation &amp;Assistance gebucht werden)<br>
-                  Jahresversicherung Familie (Personen im gleichen Haushalt): ab CHF 199.- total (je nach Versicherungsschutz)<br>Jahresversicherung Einzelperson : ab CHF 123.- total (je nach Versicherungsschutz)
-                </p>
-                <p>Mit den Versicherungen von ERV bieten wir Ihnen zudem einen optimalen Schutz rund um Covid-19 (je nach Versicherungspaket Deckung der Mehrkosten aufgrund einer Quarantäne oder einer plötzlichen Impfpflicht an der Destination).</p>
-                <p>Wir beraten Sie gerne.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row hidden-sm hidden-lg hidden-md display-block-xs text-center">
-            <div class="col-xs-12 text-center book-now text-center book-now-xs">
-              <a href='mailto:chiara.moraschini@manta.ch?subject=Angebot Nr. 603500&amp;body=Sehr geehrtes Team von Manta Voyages%0D%0A%0D%0A%0D%0A%0D%0AIch danke Ihnen für Ihren Vorschlag, den ich gerne annehme.%0D%0A%0D%0AHiermit bestätige ich Ihnen, dass die auf dem Proposal genannten Vor- und Nachnamen mit unseren Pässen identisch sind.%0D%0A%0D%0A%0D%0A%0D%0AMit freundlichen Grüssen.&amp;cc=info@manta.ch' class="button-background-color" style="width: 100%; display: block;" target="_blank">Jetzt buchen!
-              </a>
             </div>
           </div>
         </div>
